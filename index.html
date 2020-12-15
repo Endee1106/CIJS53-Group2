@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title><!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCIHcSIioRjpSfrKnPxaqmJ6FLobOmw7pU",
+        authDomain: "lolli-60b20.firebaseapp.com",
+        projectId: "lolli-60b20",
+        storageBucket: "lolli-60b20.appspot.com",
+        messagingSenderId: "237701862874",
+        appId: "1:237701862874:web:f4d37aa9c6c6b760625ce3",
+        measurementId: "G-5Z7QQZ6VCF"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
     
 </head>
 <body style="background-color: rgb(128, 0, 255);">
-    <!-- <form id="register-form">
+    <!-- <form id="login-form">
     <input-wrapper Label = "Email" type="email" error="" value=""></input-wrapper>
     <input-wrapper Label = "Name" type="text" error="" value=""></input-wrapper>
     <input-wrapper Label = "Password" type="password" error="" value=""></input-wrapper>
     <input-wrapper Label = "Password Confirmation" type="password" error="" value=""></input-wrapper>
     <button>Register</button>
     </form> -->
-    <register-form></register-form>
+    <login-form></login-form>
 a
 
     <script src="./js/app.js" type="module"></script>
